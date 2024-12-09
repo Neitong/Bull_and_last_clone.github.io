@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth scroll;
+}
+
+body {
+    font-family:"Noto Serif Ahom", serif;
+    font-size: 16px;
+    font-style: normal;
+    color: #000;
+    background-color: #FFFFFF;
+}
+
+/* Background Section */
+.background {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    position: relative;
+}
+
+.background-content {
+    height: 90vh; /* Adjust to make space for the hero image */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #265a5b; /* Dark green background */
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 2.5rem 0;
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.brand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding: 2.5rem 2.5rem 0;
+    width: 100px;
+    padding-right: 250px;
+}
+.brand img {
+    height: 150.26px;
+    width: 160px;
+}
+
+.brand h1 {
+    font-size: 2.5rem;
+    font-weight:normal;
+    text-align: center;
+    color: #fff;
+}
+
+.link {
+    display: flex;
+    gap: 15px;
+}
+
+.cart {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    align-self: center;
+}
+
+.reservation {
+    text-decoration: none;
+    background-color: #BB946E;
+    color: #fff;
+    padding: 1.25rem 2rem;
+    font-size: 1rem;
+}
+
+.reservation:hover {
+    background-color: #979797;
+}
+
+.hero-section {
+    position: relative;
+}
+
+.hero-text h1 {
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -620%);
+    color: white;
+    font-size: 4rem;
+}
+
+.hero-text h7 {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -1400%);
+    font-size: 2rem;
+    color: white;
+}
+
+/* Hero Image Section */
+.hero-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 67vh;
+    background-size: 50% auto;
+    /* margin-bottom: 20em; */
+}
+
+.hero-image img {
+    width: 100%; 
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 1rem; 
+}
+
+.reservation-link {
+    position: fixed;
+    top: 50%; /* Vertically centered */
+    right: 0; /* Align to the right edge */
+    transform: translateY(-50%); /* Perfect vertical centering */
+    writing-mode: vertical-lr; /* Display text vertically */
+    text-align: center;
+    background-color: #c3a07c; /* Button background color */
+    color: white; /* Text color */
+    padding: 20px 32px; /* Space around the text */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid #b0886a; /* Border for styling */
+    z-index: 1000; /* Ensure it is on top of other elements */
+    height: 230px;
+    width: 64px;
+}
+
+/* Hover effect for the reservation link */
+.reservation-link:hover {
+    background-color: #b0886a; /* Slightly darker background */
+    color: white; /* Maintain text color */
+}
+
+.contact-info {
+    padding: 1rem 2rem;
+    padding-bottom: 100px;
+    background: #FFFFFF;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-text {
+    padding-top: 20rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.contact-info a {
+    text-decoration: underline;
+    color: #004C46;
+}
+
+.map-image {
+    justify-content: center;
+    background-color: #FFFFFF;
+    display: flex;
+
+}
+
+.work-with-us, .send-message {
+    padding: 2rem;
+    background: #FFFFFF;
+    text-align: center;
+}
+
+.contact-form {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-formm label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px none #ccc;
+    border-radius: 5px;
+    text-wrap-style: underline;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+    
+}
+
+.contact-form button {
+    grid-column: span 2;
+    padding: 10px;
+    background-color: #d2a679;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.outer-wrapper {
+    width: 100%;
+    height: 808.69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b3a41;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    color: #ffffff;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.navigation {
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.navigation span {
+    margin: 0 4px;
+}
+
+.email-updates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.email-updates input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    margin-right: 8px;
+    border-radius: 4px;
+    height: 64px;
+    width: 382px;
+}
+
+.email-updates button {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer .arrow {
+    margin: 16px 0;
+    font-size: 24px;
+}
+  /* Remove text underline and keep link color white */
+nav ul {
+    list-style: circle;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline */
+    color: white; /* Sets text color to white */
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth transition on hover or active */
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+    color: white; /* Keeps the link color white even when hovered or active */
+}
+.logo-footer {
+width: 128px;
+height: 102.25px;
+}
+.enquiry a {
+    color: white;
+}
+.enquiry a:active,
+.enquiry a:hover,
+.enquiry a:visited {
+    color: white;
+}
+
+@media screen and (max-width: 750px) {
+    .wallet-cart-grid .wallet-cart-button-container:first-child {
+        margin-top: 8px;
+    }
+}
