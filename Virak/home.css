@@ -709,7 +709,7 @@ main {
     max-width: 100%;
     height: auto;
     display: block;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 .item-price {
@@ -738,7 +738,7 @@ main {
 }
 
 .item-detail {
-    -webkit-line-clamp: 3;
+    /* -webkit-line-clamp: 3; */
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
