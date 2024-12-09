@@ -1,5 +1,33 @@
-/* General Styling */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&display=swap');
+/* Fonts */
+@font-face {
+    font-family: 'Joanna Nova';
+    src: url(Fonts/Joanna\ Nova\ W06\ Regular.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Joanna Nova';
+    src: url(Fonts/Joanna\ Nova\ W06\ Bold.woff) format(woff);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url(Fonts/Neue\ Montreal\ Regular.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url(Fonts/Neue\ Montreal\ Bold.woff) format(woff);
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Universal Section */
 
 * {
     margin: 0;
@@ -8,96 +36,205 @@
     scroll-behavior: smooth;
 }
 
+html {
+    font-family: 'Neue Montreal', sans-serif;
+    line-height: 1.5;
+}
+
 body {
-    font-family:"Noto Serif Ahom", serif;
-    font-size: 16px;
+    font-family: 'Neue Montreal', sans-serif;
+    font-weight: normal;
     font-style: normal;
     color: #000;
     background-color: #e2e8f0;
+    line-height: 1.5;
 }
 
-/* Background Section */
-.background {
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    position: relative;
-}
+/* Header */
 
-.background-content {
-    height: 70vh; /* Adjust to make space for the hero image */
+.header-con {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #265a5b; /* Dark green background */
-    width: 100%;
-}
-
-.header {
-    display: flex;
+    gap: 1.25rem;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem 2.5rem 0;
-    color: #fff;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 2.5rem;
+    z-index: 100;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
 }
 
-.navbar ul {
+.header-space {
+    display: none;
+    width: 50%;
+}
+
+.navbar {
+    width: 50%;
+    text-align: left;
+    position: static;
+    padding: 0;
+    display: block;
+    z-index: 50;
+}
+
+.header-ul {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 1.5rem;
+    align-items: center;
     list-style: none;
-    display: flex;
-    gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar a {
+.header-a {
+    text-transform: uppercase;
+    position: relative;
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
-    font-size: 1rem;
+    cursor: pointer;
 }
 
-.brand{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    padding: 2.5rem 2.5rem 0;
-    width: 100px;
-}
-
-.brand h1 {
-    font-size: 2.5rem;
-    font-weight:normal;
+.reservation-btn {
+    display: none;
     text-align: center;
-    color: #fff;
-}
-
-.link {
-    display: flex;
-    gap: 15px;
-}
-
-.cart {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    align-self: center;
+    padding-top: 1rem;
 }
 
 .reservation {
-    text-decoration: none;
-    background-color: #BB946E;
+    text-transform: uppercase;
     color: #fff;
     padding: 1.25rem 2rem;
+    display: inline-block;
+    background-color: #bb946e;
+    opacity: 1;
+    text-decoration: inherit;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 2.5rem;
+}
+
+.head-logo {
+    width: 8rem;
+    flex-shrink: 0;
+    display: block;
+    cursor: pointer;
+}
+
+.svg {
+    /* display: block; */
+    vertical-align: middle;
+    overflow: hidden;
+    color: #fff;
+}
+
+.right-ul {
+    display: flex;
+    gap: 1.25rem;
+    width: 50%;
+    text-align: right;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.right-a {
+    color: #fff;
+    position: relative;
+    text-decoration: inherit;
+    cursor: pointer;
+}
+
+/* Main */
+/* main{
+    display: block;
+} */
+
+/* Sticky side */
+.sticky-side{
+    padding: .25rem .25rem 0 .25rem;
+    width: 260px;
+    position: fixed;
+    z-index: 500;
+    top: 60%;
+    transform: translateY(-50%) rotate(270deg);
+    border-width: 1px;
+    border-color: #bb946e;
+    border-style: solid;
+    left: 89.2%;
+    transform: rotate(270deg);
+    border-bottom: 0;
+}
+.sticky{
+    width: 100%;
+    background-color: #bb946e;
+    padding: 1.25rem 2rem;
+    color: #fff;
     font-size: 1rem;
 }
 
-.reservation:hover {
-    background-color: #979797;
+/* Shopify content block */
+.shopify-section 
+{
+    /* border: 0 solid #e2e8f0; */
+    line-height: 1.5;
+    font-family: 'Neue Montreal', sans-serif;
+    -webkit-text-size-adjust: 100%;
 }
 
-/* Hero Image Section */
+.background-content{
+    display: flex;
+    position: relative;
+    
+}
+
+.background-color {
+    width: 100%;
+    height: 77.4vh;
+    opacity: 1;
+    background-color: #265a5b;
+}
+
+.background-image{
+    width: 1381.09px;
+    height: 629.33px;
+    margin-left: 178.545px;
+    margin-right: 178.545px;
+    transform: translate(-50%, -65%);
+    overflow: hidden;
+    
+    position: relative;
+}
+
+.background-image img{
+    width: 1024px;
+    height: 629.33px;
+    
+}
+
+.z-10{
+    z-index: 10;
+}
+
+.relative
+{
+    position: relative;
+}
+
+.layerload{
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(.52, .01, .16, 1);
+}
+
 .hero-image {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -105,12 +242,55 @@ body {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    height: 78vh;
+    height: 67vh;
     background-size: 50% auto;
+    /* margin-bottom: 20em; */
 }
 
 .hero-image img {
     width: 100%; 
     height: 100%;
-    object-fit: contain; 
+    object-fit: contain;
+    margin-bottom: 1rem; }
+
+/* Arrow content */
+.arrow-animation 
+{
+    max-width: 109.88px;
+    height: 139.34px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.word-under-row h2
+{
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.arrow-down-con {
+    width: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arrow-down {
+    animation: bounce 1s infinite;
+    display: block;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
 }
